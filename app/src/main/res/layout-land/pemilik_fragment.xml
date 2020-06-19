@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BEBEBE"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tess1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Nama"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tess1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tess2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess1"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" No. ID"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/id_pemilik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_toRightOf="@id/tess2"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tess3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess2"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Tipe ID"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tipe_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_pemilik"
+        android:layout_toRightOf="@id/tess2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess3"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Alamat"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipe_id"
+        android:layout_toRightOf="@id/tess4"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess4"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" No. Telp."
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/no_telepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamat"
+        android:layout_toRightOf="@id/tess5"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

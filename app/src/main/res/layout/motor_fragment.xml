@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BEBEBE"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tess1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Plat No."
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/plat_no"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/tess1"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tess2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess1"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" ID Pemilik"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/no_id_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plat_no"
+        android:layout_toRightOf="@id/tess2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess2"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Jenis"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/jenis_motor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_id_set"
+        android:layout_toRightOf="@id/tess3"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess3"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Merek"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/merek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenis_motor"
+        android:layout_toRightOf="@id/tess4"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess4"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Model"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/merek"
+        android:layout_toRightOf="@id/tess5"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tess6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tess5"
+        android:layout_marginLeft="-7dp"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text=" Kilometer"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/km_tempuh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/model"
+        android:layout_toRightOf="@id/tess6"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

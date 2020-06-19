@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bebebe"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#304FFE"
+        android:text="AutoMech Workshop"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/colorPrimary"
+        android:text="Satu Perhentian untuk Semua Perbaikan Motor Anda"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/buatnotaservis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Buat Nota Servis"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="?attr/actionModeSplitBackground"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Nota No."
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nota_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:ems="10"
+                android:hint="Nota No."
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/platno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Plat No."
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/plat_no_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Plat No."
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pilihmontir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Pilih Montir"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/montir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tanggalservis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Tanggal"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Tanggal"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sebabmasalah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Sebab Masalah"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/masalah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/elektrik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Elektrik"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textCursorDrawable="?attr/actionModeSplitBackground"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/mesin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Mesin"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textCursorDrawable="?attr/actionModeSplitBackground"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/transmisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Transmisi"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textCursorDrawable="?attr/actionModeSplitBackground"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/lainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Lainnya"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textCursorDrawable="?attr/actionModeSplitBackground"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/isi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Keluhan"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/keluhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:ems="10"
+                android:hint="Keluhan"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/isi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Catatan Servis"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/catatanservis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:ems="10"
+                android:hint="Catatan Servis"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="?attr/actionModeSplitBackground"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/simpanservis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/simpan" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
